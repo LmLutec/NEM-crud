@@ -42,7 +42,7 @@ const Todo = () => {
 
         <br />
         <br />
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Remind me" />
       </form>
     </div>
   );

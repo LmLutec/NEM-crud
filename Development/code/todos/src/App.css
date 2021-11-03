@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+.todoHdr {
+  color: gray;
+  font-size: 4em;
+  font-weight: lighter;
+}

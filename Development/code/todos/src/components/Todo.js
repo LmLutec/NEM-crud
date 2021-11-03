@@ -11,37 +11,35 @@ const Todo = () => {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Task:
-          <input
-            type="text"
-            value={task}
-            placeholder="What needs to be done?"
-            onChange={(e) => setTask(e.target.value)}
-          />
-        </label>
+    <div className="todoContainer">
+      <form onSubmit={handleSubmit} className="todoForm">
+        <input
+          type="text"
+          value={task}
+          placeholder="What needs to be done?"
+          onChange={(e) => setTask(e.target.value)}
+        />
+
         <br />
         <br />
-        <label>
-          Due Date:
-          <input
-            type="text"
-            value={dueDate}
-            onChange={(e) => setDueDate(e.target.value)}
-          />
-        </label>
+
+        <input
+          type="text"
+          value={dueDate}
+          placeholder="Due Date"
+          onChange={(e) => setDueDate(e.target.value)}
+        />
+
         <br />
         <br />
-        <label>
-          Category:
-          <input
-            type="text"
-            value={category}
-            onChange={(e) => setCategory(e.target.value)}
-          />
-        </label>
+
+        <input
+          type="text"
+          value={category}
+          placeholder="Select the category"
+          onChange={(e) => setCategory(e.target.value)}
+        />
+
         <br />
         <br />
         <input type="submit" value="Submit" />
